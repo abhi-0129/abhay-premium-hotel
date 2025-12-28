@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abhay Premium Hotels</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Abhay <span>Premium Hotel</span></a>
+
+      <nav id="nav" class="nav">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#rooms">Rooms</a>
+        <a class="nav-link" href="#facilities">Facilities</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <p class="kicker">Luxury • Comfort • Hospitality</p>
+        <h1>Stay at <span>Abhay Premium Hotels</span></h1>
+        <p class="lead">Comfortable rooms, rooftop dining, relaxing pool and personalized service — all in the heart of the city.</p>
+
+        <div class="hero-cta">
+          <a href="#rooms" class="btn btn-primary">View Rooms</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+
+        <ul class="hero-stats">
+          <li><strong>120+</strong><span>Rooms</span></li>
+          <li><strong>5</strong><span>Star Service</span></li>
+          <li><strong>24/7</strong><span>Support</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="search-card">
+          <h4>Check availability</h4>
+          <form id="booking-form" class="booking-form">
+            <label>Check-in <input type="date" id="checkin" required></label>
+            <label>Check-out <input type="date" id="checkout" required></label>
+            <label>Guests
+              <select id="guests">
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+              </select>
+            </label>
+            <label>Room
+              <select id="room-type">
+                <option>Deluxe Room</option>
+                <option>Executive Suite</option>
+                <option>Family Suite</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-primary full">Check</button>
+            <p id="booking-msg" class="muted small"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS -->
+  <section id="rooms" class="section">
+    <div class="container section-head">
+      <p class="section-tag">Rooms</p>
+      <h2>Elegant Rooms & Suites</h2>
+      <p class="section-sub">Comfort and thoughtful design for every traveler.</p>
+    </div>
+
+    <div class="container rooms-grid">
+      <article class="room-card">
+        <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg" alt="Deluxe Room">
+        <div class="room-body">
+          <h3>Deluxe Room</h3>
+          <p class="muted">King bed • AC • Smart TV • Free Wi-Fi</p>
+          <div class="room-footer">
+            <span class="price">₹3,499 <small>/ night</small></span>
+            <button class="btn btn-outline open-modal" data-img="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg" data-title="Deluxe Room">View</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <img src="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg" alt="Executive Suite">
+        <div class="room-body">
+          <h3>Executive Suite</h3>
+          <p class="muted">Living area • Mini bar • City view</p>
+          <div class="room-footer">
+            <span class="price">₹5,999 <small>/ night</small></span>
+            <button class="btn btn-outline open-modal" data-img="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg" data-title="Executive Suite">View</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <img src="https://images.pexels.com/photos/306407/pexels-photo-306407.jpeg" alt="Family Suite">
+        <div class="room-body">
+          <h3>Family Suite</h3>
+          <p class="muted">Two bedrooms • Living area • Breakfast</p>
+          <div class="room-footer">
+            <span class="price">₹7,499 <small>/ night</small></span>
+            <button class="btn btn-outline open-modal" data-img="https://images.pexels.com/photos/306407/pexels-photo-306407.jpeg" data-title="Family Suite">View</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FACILITIES -->
+  <section id="facilities" class="section alt">
+    <div class="container section-head">
+      <p class="section-tag">Facilities</p>
+      <h2>World-class Facilities</h2>
+      <p class="section-sub">Everything to make your stay comfortable and memorable.</p>
+    </div>
+
+    <div class="container facilities-grid">
+      <div class="fac-card"><i class="fa-solid fa-pool"></i><h4>Rooftop Pool</h4><p class="muted">Sunset views & loungers.</p></div>
+      <div class="fac-card"><i class="fa-solid fa-utensils"></i><h4>Restaurant</h4><p class="muted">Multi-cuisine fine dining.</p></div>
+      <div class="fac-card"><i class="fa-solid fa-dumbbell"></i><h4>Fitness Centre</h4><p class="muted">24/7 gym with trainers.</p></div>
+      <div class="fac-card"><i class="fa-solid fa-suitcase"></i><h4>Business Center</h4><p class="muted">Meeting rooms & co-working.</p></div>
+      <div class="fac-card"><i class="fa-solid fa-spa"></i><h4>Spa & Wellness</h4><p class="muted">Relaxing treatments.</p></div>
+      <div class="fac-card"><i class="fa-solid fa-shield-halved"></i><h4>Hygiene</h4><p class="muted">Daily sanitization protocols.</p></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container section-head">
+      <p class="section-tag">Gallery</p>
+      <h2>Peek Inside</h2>
+      <p class="section-sub">Real photos of rooms, dining and spaces.</p>
+    </div>
+
+    <div class="container gallery-grid">
+      <img class="gallery-item open-modal" data-img="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg" src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg" alt="">
+      <img class="gallery-item open-modal" data-img="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg" src="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg" alt="">
+      <img class="gallery-item open-modal" data-img="https://images.pexels.com/photos/306407/pexels-photo-306407.jpeg" src="https://images.pexels.com/photos/306407/pexels-photo-306407.jpeg" alt="">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section alt">
+    <div class="container about-grid">
+      <div>
+        <p class="section-tag">About Us</p>
+        <h2>Where Comfort Meets Class</h2>
+        <p class="muted">Abhay Premium Hotels delivers premium hospitality with a personal touch. Ideal for business travelers, families and couples — we curate memorable stays with detail and care.</p>
+
+        <ul class="bullet-list">
+          <li><i class="fa-solid fa-check"></i> Personalized concierge & city tours</li>
+          <li><i class="fa-solid fa-check"></i> Special event & wedding packages</li>
+          <li><i class="fa-solid fa-check"></i> Corporate tie-ups and long-stay offers</li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary">Contact Sales</a>
+      </div>
+
+      <div>
+        <!-- FIXED HEIGHT IMAGE — controlled in CSS -->
+        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg" alt="Hotel Lobby" class="about-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container section-head">
+      <p class="section-tag">Testimonials</p>
+      <h2>Guest Reviews</h2>
+      <p class="section-sub">What guests say after their stay.</p>
+    </div>
+
+    <div class="container reviews-grid">
+      <div class="review-card"><p class="muted">"Amazing stay, staff were helpful and rooftop dinner was unforgettable."</p><h4>- Ritu K.</h4></div>
+      <div class="review-card"><p class="muted">"Perfect location and very clean rooms. Recommend for business trips."</p><h4>- Mohammed A.</h4></div>
+      <div class="review-card"><p class="muted">"Kids loved the pool and breakfast was great. Will return!"</p><h4>- Priya S.</h4></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="container section-head">
+      <p class="section-tag">Contact</p>
+      <h2>Get In Touch</h2>
+      <p class="section-sub">Questions about bookings, events or special requests? We’re here to help.</p>
+    </div>
+
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h3>Abhay Premium Hotels</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Abhay Premium Hotel Road, Jaipur, Rajasthan</p>
+        <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fa-solid fa-envelope"></i> reservations@abhaypremium.com</p>
+        <p class="muted small">Open: 6:00 AM – 11:00 PM (Daily)</p>
+      </div>
+
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Full name" required>
+        <input type="email" name="email" placeholder="Email address" required>
+        <input type="tel" name="phone" placeholder="Phone (optional)">
+        <textarea name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p id="contact-msg" class="muted small"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>Abhay Premium Hotels</strong>
+        <p class="small muted">Luxury stays • Memorable experiences</p>
+      </div>
+      <div class="footer-right small muted">
+        <p>© 2025 Abhay Premium Hotels • All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+      <img id="modal-img" src="" alt="">
+      <h3 id="modal-title"></h3>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+</body>
+</html>
